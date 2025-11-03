@@ -1,3 +1,5 @@
 import "./styles.css";
-
+import "./header.css";
+import "./main.css";
+import "./footer.css";
 console.log("Hello World");

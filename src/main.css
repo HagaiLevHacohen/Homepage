@@ -1,0 +1,90 @@
+/* ===== Main ===== */
+
+main {
+  flex: 1;
+  padding: 100px;
+}
+
+main > h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.card > .project-screenshot {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 42px;
+}
+.card:nth-child(1) > .project-screenshot {
+  background-color: rgb(148, 42, 33);
+}
+.card:nth-child(2) > .project-screenshot {
+  background-color: rgb(124, 118, 198);
+}
+.card:nth-child(3) > .project-screenshot {
+  background-color: rgb(102, 141, 82);
+}
+.card:nth-child(4) > .project-screenshot {
+  background-color: rgb(186, 105, 177);
+}
+.card:nth-child(5) > .project-screenshot {
+  background-color: rgb(208, 146, 69);
+}
+.card:nth-child(6) > .project-screenshot {
+  background-color: rgb(94, 160, 207);
+}
+
+.card-content {
+  height: 40%;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr 40px 40px;
+  grid-template-rows: 50px 1fr;
+  gap: 10px;
+}
+
+.card-content > p {
+  grid-column: 1 / 4;
+}
+
+@media (max-width: 1000px) and (min-width: 500px) {
+  /* ===== Main ===== */
+  main {
+    padding: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  /* ===== Main ===== */
+
+  main {
+    padding: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
